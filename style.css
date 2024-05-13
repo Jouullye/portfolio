@@ -1,18 +1,20 @@
-*{
-margin: 0;
-padding: 0;
-box-sizing: border-box;
-font-family: 'Courier New', Courier, monospace;
-}
-.body{
-    min-height: 100vh;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
 }
 
-.header{
-    position:fixed;
-    top:0;
+.body {
+    min-height: 100vh;
+    position: relative; /* Ajout d'une position relative pour que le footer soit positionné correctement */
+}
+
+.header {
+    position: fixed;
+    top: 0;
     left: 0;
-    width:100%;
+    width: 100%;
     padding: 20px 0px;
     background: #5d585b;
     display: flex;
@@ -21,28 +23,27 @@ font-family: 'Courier New', Courier, monospace;
     z-index: 100;
 }
 
-.logo{
-    width:60px;
-    padding-left:30px;
-    height:auto;
- 
+.logo {
+    width: 60px;
+    padding-left: 30px;
+    height: auto;
 }
+
 .navbar {
-    padding-right:80px; 
+    padding-right: 80px;
 }
 
-
-.navbar a{
+.navbar a {
     position: relative;
     font-size: 18px;
-    color:#fff;
+    color: #fff;
     font-weight: 500;
     text-decoration: none;
     margin-left: 40px;
 }
 
-.navbar a::before{
-    content:"";
+.navbar a::before {
+    content: "";
     position: absolute;
     top: 100%;
     left: 0;
@@ -50,26 +51,24 @@ font-family: 'Courier New', Courier, monospace;
     height: 2px;
     background-color: #fff;
     transition: .3s;
-  
 }
 
-.navbar a:hover::before{
+.navbar a:hover::before {
     width: 100%;
     transition: .3s;
 }
 
-footer{
+.footer {
     width: 100%;
-    position:absolute;
+    position: fixed; /* Changement de position à "fixed" */
     bottom: 0;
     padding: 20px 30px;
-    background: #5D585B;
+    background: #5d585b;
     display: flex;
     justify-content: space-between;
     align-items: center;
     z-index: 100;
 }
-
 
 .left a{
     text-decoration: none;
@@ -110,4 +109,80 @@ footer{
     text-decoration: none;
     border-radius: 15px;
 
+}
+
+.h1-contact{
+    color: #364057;
+    padding-top: 80px;
+    padding-bottom: 30px;
+    font-size: 50px;
+ 
+    margin-left: 35%;
+}
+
+input{
+    width: 60%;
+    margin-left: 35%;
+    font-size: 20px;
+    padding: 16px 16px;
+    border-radius: 10px;
+    border-color:#364057;
+    margin-bottom: 20px;
+}
+
+textarea{
+    width:60%;
+    margin-left: 35%;
+    font-size: 20px;
+    padding: 16px 16px;
+    border-radius: 10px;
+    border-color: #364057;
+    margin-bottom: 20px;
+}
+
+input:focus-within{
+    outline: none;
+    border-color: #364057;
+    border-width: 3px;
+}
+
+textarea:focus-within{
+    outline: none;
+    border-color: #364057;
+    border-width: 3px;
+}
+
+.btn-contact{
+    background: #364057;
+    border-radius: 20px;
+    font-size: 22px;
+    text-align: center;
+    padding:10 18px;
+    display:flex;
+    margin: auto;
+    padding: 10px 20px;
+    margin-bottom: 10%;
+    color:#fff;
+    margin-left: 35%;
+}
+.btn-contact:hover{
+    opacity:80%;
+    cursor: pointer;
+}
+
+.container-contact{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-contact img{
+    width: 100px;
+    height: 100px;
+    margin-left: 100%;
+}
+
+.img-contact{
+  margin-left: 10%;
 }
