@@ -7,11 +7,10 @@
 
 .body {
     min-height: 100vh;
-    position: relative; /* Ajout d'une position relative pour que le footer soit positionné correctement */
-}
+    position: relative; }
 
 .header {
-    position: fixed;
+    position: relative;
     top: 0;
     left: 0;
     width: 100%;
@@ -29,6 +28,9 @@
     height: auto;
 }
 
+
+
+/* !!!!!!!!!!!!!!!!NAVBAR!!!!!!!!!!!!!!!!*/
 .navbar {
     padding-right: 80px;
 }
@@ -57,10 +59,15 @@
     width: 100%;
     transition: .3s;
 }
+/* !!!!!!!!!!!!!!!!FIN NAVBAR!!!!!!!!!!!!!!!!*/
+
+
+
+/* !!!!!!!!!!!!!!!!FOOTER!!!!!!!!!!!!!!!!*/
 
 .footer {
     width: 100%;
-    position: fixed; /* Changement de position à "fixed" */
+    position: relative; 
     bottom: 0;
     padding: 20px 30px;
     background: #5d585b;
@@ -68,103 +75,88 @@
     justify-content: space-between;
     align-items: center;
     z-index: 100;
+    flex-wrap: wrap;
 }
 
-.left a{
+.footer .right {
+    margin-top: 10px; /* Add some spacing for smaller screens */
+}
+
+.footer .left a, .footer .right a {
     text-decoration: none;
-    color:#fff;
+    color: #fff;
     font-size: 16px;
+    margin-right: 10px;
 }
 
-
+.footer .left, .footer .right {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
 
 .center{
     padding-right:150px;
     padding-left: 10px;
 }
 
-.btn-cv{
+.footer .btn-linkedin, .footer .btn-cv {
     background: #A98B66;
-    font-size: 16px;
     text-align: center;
-    padding:15px;
-    height: 30px;
-    width: 30px;
-    font-weight: bold;
+    padding: 10px 15px;
     text-transform: uppercase;
     text-decoration: none;
     border-radius: 15px;
-    color:#fff;
-}
-
-.btn-linkedin{
-    background: #A98B66;
-    text-align: center;
-  
+    color: #fff;
     margin-right: 10px;
-    padding:15px;
-   
-
-    text-transform: uppercase;
-    text-decoration: none;
-    border-radius: 15px;
-
 }
+
+.footer .btn-linkedin i {
+    font-size: 16px;
+}
+
+/* !!!!!!!!!!!!!!!!FIN FOOTER!!!!!!!!!!!!!!!!*/
+
+
+
+/* !!!!!!!!!!!!!!!!CONTACT PAGE!!!!!!!!!!!!!!!!*/
 
 .h1-contact{
     color: #364057;
-    padding-top: 80px;
+    padding-top: 10px;
     padding-bottom: 30px;
     font-size: 50px;
- 
-    margin-left: 35%;
+    text-align: center;
 }
 
-input{
-    width: 60%;
-    margin-left: 35%;
+input, textarea{
+    width: 80%;
+    margin: 0 auto;
     font-size: 20px;
     padding: 16px 16px;
     border-radius: 10px;
-    border-color:#364057;
+    border: 2px solid #364057;
+    display: block;
     margin-bottom: 20px;
 }
 
-textarea{
-    width:60%;
-    margin-left: 35%;
-    font-size: 20px;
-    padding: 16px 16px;
-    border-radius: 10px;
-    border-color: #364057;
-    margin-bottom: 20px;
-}
-
-input:focus-within{
+input:focus, textarea:focus {
     outline: none;
     border-color: #364057;
     border-width: 3px;
 }
 
-textarea:focus-within{
-    outline: none;
-    border-color: #364057;
-    border-width: 3px;
-}
-
-.btn-contact{
+.btn-contact {
     background: #364057;
     border-radius: 20px;
     font-size: 22px;
     text-align: center;
-    padding:10 18px;
-    display:flex;
-    margin: auto;
     padding: 10px 20px;
-    margin-bottom: 10%;
-    color:#fff;
-    margin-left: 35%;
+    display: block;
+    margin: 20px auto 10%;
+    color: #fff;
 }
+
 .btn-contact:hover{
     opacity:80%;
     cursor: pointer;
@@ -173,16 +165,158 @@ textarea:focus-within{
 .container-contact{
     width: 100%;
     display: flex;
-    justify-content: center;
+    flex-direction: row;
     align-items: center;
+    justify-content: space-between;
 }
 
 .img-contact img{
     width: 100px;
     height: 100px;
-    margin-left: 100%;
+    display: block;
 }
 
 .img-contact{
   margin-left: 10%;
+}
+
+.form-contact {
+    flex-grow: 1;
+}
+/* !!!!!!!!!!!!!!!!FIN CONTACT PAGE!!!!!!!!!!!!!!!!*/
+
+
+
+/* !!!!!!!!!!!!!!!!PAGE PROJET!!!!!!!!!!!!!!!!*/
+.h1-projetPage{
+    color: #364057;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-size: 50px;
+    text-align: center;
+}
+
+.h2-projetPage{
+    color: #364057;
+    padding-top: 30px;
+    padding-bottom: 10px;
+    font-size: 30px;
+    text-align: center;
+}
+
+.h3-projetPage{
+    color: #364057;
+    padding-bottom: 30px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.btn-projectPage{
+    background: #364057;
+    border-radius: 20px;
+    font-size: 17px;
+    padding: 5px 10px;
+    margin: 10px;
+    text-align: center;
+
+    color: #fff;
+}
+.btn-projectPage:hover{
+    opacity:80%;
+    cursor: pointer;
+}
+
+.container-projetPage{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.img-projectPage img{
+    width: 100px;
+    height: 100px;
+    display: block;
+}
+.img-projectPage{
+  margin-left: 10%;
+}
+
+.pictures {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin: 40px 0;
+}
+
+
+.vignette img {
+    width: 60%;
+    height: 60%;
+    display: block;
+    border-radius: 8px;
+}
+
+.text-projectPage{
+    margin: 0 10%;
+}
+
+
+/* !!!!!!!!!!!!!!!!FIN PAGE PROJET!!!!!!!!!!!!!!!!*/
+
+
+
+/* !!!!!!!!!!!!!!!!RESPONSIVE STYLES!!!!!!!!!!!!!!!!*/
+
+@media (max-width: 1200px) {
+    .vignette {
+        flex: 1 1 calc(33.333% - 40px);
+    }
+}
+
+@media (max-width: 900px) {
+    .vignette {
+        flex: 1 1 calc(50% - 40px);
+    }
+}
+
+@media (max-width: 600px) {
+    .vignette {
+        flex: 1 1 calc(100% - 40px);
+    }
+    .footer {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .footer .left, .footer .right {
+        width: 100%;
+        justify-content: space-between;
+    }
+    .footer .right {
+        justify-content: flex-start;
+        margin-top: 10px;
+    }
+    .footer .left a, .footer .right a {
+        margin-bottom: 10px;
+    }
+
+    .container-contact {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .img-contact {
+        margin: 0 0 20px 0;
+    }
+
+    .form-contact {
+        width: 60%;
+    }
+
+    .h1-contact, input, textarea, .btn-contact {
+        width: 100%;
+        margin-left: 0;
+    }
 }
