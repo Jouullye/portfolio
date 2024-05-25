@@ -243,14 +243,21 @@ input:focus, textarea:focus {
     height: 200px;
 }
 
-#img_marketmadnessVignette2{
+
+#img_marketmadnessVignette{
     width: 300px;
     height: 200px;
 }
 
-#img_marketmadnessVignette1{
+#img_qcaventure{
+
     width: 300px;
-    height: 200px;
+    height: 300px;
+}
+#img_qcadventureVignette{
+    width: 200px;
+    height: 400px;
+    padding: 20px;
 }
 
 .img-projectPage{
@@ -332,6 +339,11 @@ input:focus, textarea:focus {
     }
 
     #img_marketmadness{
+
+        width: 200px;
+        height: 150px;
+    }
+    #img_qcaventure{
 
         width: 200px;
         height: 150px;
