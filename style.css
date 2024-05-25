@@ -269,6 +269,15 @@ input:focus, textarea:focus {
     width: 300px;
     height: 200px;
 }
+#img_nouveausoleil{
+    width: 300px;
+    height: 200px;
+}
+#img_nouveausoleilVignette{
+    width: 300px;
+    height: 200px;
+}
+
 
 .img-projectPage{
   margin-left: 10%;
@@ -358,11 +367,17 @@ input:focus, textarea:focus {
         width: 200px;
         height: 150px;
     }
-    #img_marketmadness{
+    #img_alarmacademy{
 
         width: 200px;
         height: 150px;
     }
+
+    #img_nouveausoleil{
+        width: 200px;
+        height: 150px;
+    }
+
     .img-projectPage{
         padding: 20px 0px 0px 0px;
         margin-left: 0%;
