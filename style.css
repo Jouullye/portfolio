@@ -34,6 +34,8 @@ a{
 }
 
 
+
+
 /* !!!!!!!!!!!!!!!!NAVBAR!!!!!!!!!!!!!!!!*/
 .navbar {
     padding-right: 80px;
@@ -120,6 +122,147 @@ a{
 }
 
 /* !!!!!!!!!!!!!!!!FIN FOOTER!!!!!!!!!!!!!!!!*/
+
+
+
+/* !!!!!!!!!!!!!!!!HOME PAGE!!!!!!!!!!!!!!!!*/
+
+
+.main-content {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    width: 100%;
+}
+
+.text {
+    flex: 1;
+    padding-right: 20px;
+}
+
+#title_home{
+    font-size: 48px;
+    color: #364057;
+    margin-bottom: 20px;
+}
+
+#sub_title_home {
+    font-size: 18px;
+    color: #364057;
+    margin-bottom: 20px;
+}
+
+.images {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.photo_croop {
+    display: flex;
+}
+
+.photo_croop img {
+    max-width: 80%;
+    border-radius: 8px;
+}
+
+.photo_croop1 {
+    display: flex;
+}
+
+.photo_croop1 img {
+    max-width: 50%;
+    border-radius: 8px;
+   
+}
+
+#photo_right{
+    padding-top: 5%;
+
+}
+
+#photo_right1{
+    padding-top: 5%;
+    margin: 0px;
+}
+
+
+
+.inspirations, .hobby, .jeu {
+    display: flex;
+    flex-direction: row; 
+    align-items: center;
+    padding: 20px 20px;
+
+}
+
+.inspirations, .hobby {
+    background-color: #364057;
+}
+
+
+.text-section {
+   
+    color: #fff;
+}
+
+
+
+.text-section h2, .text-section-jeu h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.text-section ul, .text-section-jeu ul {
+    list-style: none;
+}
+
+.text-section ul li, .text-section-jeu ul li {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.images_columns {
+    display: flex;
+    flex-direction: column; 
+    margin: 20px 0px;
+    margin-left: 8%;
+    width:45%;
+}
+
+.images_rows {
+    display: flex;
+    flex-direction: row; 
+   
+}
+
+
+.text-section-jeu{
+    padding-left:10%;
+}
+
+.images_columns-jeu {
+    display: flex;
+    flex-direction: column; 
+    margin: 20px 0px;
+    margin-left: 30%;
+    width: 45%;
+   
+}
+
+
+/* !!!!!!!!!!!!!!!!FIN HOME PAGE!!!!!!!!!!!!!!!!*/
 
 
 
@@ -416,6 +559,8 @@ input:focus, textarea:focus {
         flex: 1 1 calc(50% - 20px); /* 2 items per row */
         max-width: calc(50% - 20px);
     }
+
+    
 }
 
 
@@ -471,38 +616,10 @@ input:focus, textarea:focus {
         align-items: center;
     }
 
-    #img_marketmadness{
-
-        width: 200px;
-        height: 150px;
-    }
-    #img_qcaventure{
-
-        width: 200px;
-        height: 150px;
-    }
-    #img_alarmacademy{
-
-        width: 200px;
-        height: 150px;
-    }
-
-    #img_nouveausoleil{
-        width: 200px;
-        height: 150px;
-    }
-
-    #img_wsgd{
-        width: 200px;
-        height: 150px;
-    }
-
-    #img_bp{
-        width: 200px;
-        height: 150px;
-    }
-
-    #img_temps{
+    #img_bp, #img_temps,  #img_wsgd,
+    #img_nouveausoleil, #img_alarmacademy,
+    #img_qcaventure, #img_marketmadness 
+    {
         width: 200px;
         height: 150px;
     }
@@ -510,5 +627,45 @@ input:focus, textarea:focus {
     .img-projectPage{
         padding: 20px 0px 0px 0px;
         margin-left: 0%;
+    }
+
+    .photo_croop,
+    .photo_croop1 {
+        flex-direction: row;
+    }
+
+    .images img {
+        width: 100%;
+        height: auto;
+    }
+    .inspirations, .hobby, .jeu {
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+
+    .images_columns {
+        width: 100%;
+        margin-left: 25%;
+    }
+
+    #photo_right,
+    #photo_right1 {
+        padding-top: 5%;
+    }
+
+    .text-section, .text-section-jeu {
+        margin-bottom: 20px;
+    }
+
+    .text-section h2, .text-section-jeu h2{
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+
+    .text-section ul li, .text-section-jeu ul li {
+        font-size: 18px;
+        margin-bottom: 8px;
     }
 }
