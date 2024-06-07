@@ -256,9 +256,14 @@ a{
     display: flex;
     flex-direction: column; 
     margin: 20px 0px;
-    margin-left: 30%;
+    margin-left: 20%;
     width: 45%;
    
+}
+
+#index_pict{
+    width: 300px;
+    height: 300px;
 }
 
 
@@ -643,6 +648,7 @@ input:focus, textarea:focus {
         align-items: center;
     }
 
+   
 
 
     .images_columns {
@@ -657,15 +663,18 @@ input:focus, textarea:focus {
 
     .text-section, .text-section-jeu {
         margin-bottom: 20px;
+        text-align: center;
     }
 
     .text-section h2, .text-section-jeu h2{
         font-size: 24px;
         margin-bottom: 10px;
+        text-align: center;
     }
 
     .text-section ul li, .text-section-jeu ul li {
         font-size: 18px;
         margin-bottom: 8px;
+        text-align: center;
     }
 }
